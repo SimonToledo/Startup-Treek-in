@@ -1,6 +1,18 @@
+.card {
+  display: inline-block;
+}
+
+.prices {
+  z-index: 1;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Open Sans", sans-serif;
+}
+
+.footer {
+  color: #ffffff;
 }
 
 @keyframes opacidad {
@@ -13,6 +25,18 @@ body {
   100% {
     opacity: 100%;
   }
+}
+footer {
+  background-color: #221d23;
+}
+
+.card-header {
+  border-color: #000000;
+  background-color: #ffffff;
+}
+
+.features {
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */
