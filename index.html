@@ -45,14 +45,14 @@
  </nav>
 
  <header class="header" id="about">
-   <div class="card card-header" style="width: 18rem;">
+   <div class="card card-header" style="width: 25rem;">
      <div class="card-body">
        <h1 class="card-title"><strong>Haz Trekking sin Parar</strong></h1>
        <p class="card-text">Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
      </div>
    </div>
 
-
+<div class="svg-trekking">
  <svg class="trekking" width="100%" height="865px" viewBox="0 0 1440 865" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
            <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
            <title>bg-hero</title>
@@ -99,16 +99,19 @@
                </g>
            </g>
        </svg>
+     </div>
 </header>
 
 
 <section class="features" id="features">
-       <h2 class="features__title">Características</h2>
+       <h2 class="features__title"><strong>Características</strong></h2>
 
        <div class="features__flexbox-container">
+
+         <div class="card card-caracteristicas" style="width: 25rem;">
            <div class="features__item">
            <div class="features__item features__item-grafico">
-               <svg width="30%" height="100%" viewBox="0 0 318 165" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+               <svg width="80%" height="100%" viewBox="0 0 318 165" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                    <g class="bar-graph" fill-rule="evenodd">
                        <path class="a-bar" fill="#EE9480"
                            d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zM116.276 32h34.778v129h-34.778z" />
@@ -119,16 +122,23 @@
                    </g>
                </svg>
            </div>
-           <div class="features__item">
-               <h3 class="features__item">Estadísticas de tu progreso</h3>
+         </div>
+       </div>
+
+         <div class="card card-caracteristicas" style="width: 25rem;">
+           <div class="features__items">
+             <br><br><br><br>
+               <h3 class="features__item"><strong>Estadísticas de tu progreso</strong></h3>
                <p class="features__item-right">Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis nec orci, viverra turpis himenaeos per sollicitudin facilisis dictum tempor sem, vel porta sociosqu felis fusce nam nascetur libero ligula.</p>
            </div>
-       </div>
+        </div>
+
      </div>
   </section>
 
 
-  <svg width="1440px" height="893px" viewBox="0 0 1440 893" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<section class="svg-cerro">
+  <svg width="100%" height="893px" viewBox="0 0 1440 893" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
       <title>bg</title>
       <desc>Created with Sketch.</desc>
@@ -140,20 +150,22 @@
           </g>
       </g>
   </svg>
+</section>
 
 
 
   <section class="prices" id="prices">
     <div class="container">
-        <h2 class="prices__title">Precios</h2>
+        <h2 class="prices__title"><strong>Precios</strong></h2>
 
+        <div class="card-precios">
           <div class="row">
 
             <div class="col-sm-6">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h3 class="card__title">Trekk-in Free</h3>
-                    <h2 class="card__price">$0 / mes</h2>
+                    <h2 class="card__price"><strong>$0 / mes</strong></h2>
                     <hr>
                     <ul>
                         <li>
@@ -164,7 +176,7 @@
                         </li>
                     </ul>
                     <hr>
-                    <a href="#" class="btn card__boton-prices boton__price-1">Obtén Free</a>
+                    <a href="#" class="btn card__boton-prices boton__price-1 btn-primary btn-precios">Obtén Free</a>
                 </div>
             </div>
           </div>
@@ -173,7 +185,7 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h3 class="card__title">Trekk-in Free</h3>
-                    <h2 class="card__price">$3500 / mes</h2>
+                    <h2 class="card__price"><strong>$3500 / mes</strong></h2>
                     <hr>
                     <ul>
                         <li>
@@ -193,12 +205,14 @@
                         </li>
                     </ul>
                     <hr>
-                    <a href="#" class="btn card__boton-prices">Obtén Premium</a>
+                    <a href="#" class="btn card__boton-prices btn-primary btn-precios">Obtén Premium</a>
                 </div>
             </div>
           </div>
 
         </div>
+      </div>
+      </div>
 </section>
 
 
@@ -207,24 +221,24 @@
       <div class="row">
 
           <div class="col-sm-2">
-                <p>Legal</p>
+                <p class="footer-text">Legal</p>
           </div>
 
           <div class="col-sm-2">
-                <p>Cookies</p>
+                <p class="footer-text">Cookies</p>
           </div>
 
           <div class="col-sm-2">
-                <p>Sobre nosotros</p>
+                <p class="footer-text">Sobre nosotros</p>
           </div>
 
         <div class="col-sm-4">
         </div>
 
           <div class="col-sm-2">
-            <p class="derechos">&copy; 2018 Trekk-in SPA.</p>
+            <p class="footer-text">&copy; 2018 Trekk-in SPA.</p>
         </div>
-    </div>
+     </div>
     </footer>
 
 

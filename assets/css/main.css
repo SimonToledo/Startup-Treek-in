@@ -7,6 +7,17 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.prices__title {
+  color: #ffffff;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-precios {
+  width: 15rem;
+}
+
 .footer {
   color: #ffffff;
 }
@@ -22,28 +33,43 @@ body {
     opacity: 100%;
   }
 }
-footer {
-  background-color: #221d23;
-  height: 5rem;
+.prices {
+  position: absolute;
+  top: 93em;
+  left: 20rem;
 }
 
-header {
-  margin-bottom: 10em;
+.features {
+  text-align: center;
+}
+
+.card-caracteristicas {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #221d23;
+  height: 7rem;
+  margin-right: 0;
+  margin-top: -2rem;
+}
+
+.footer-text {
+  margin-top: 3rem;
+  margin-left: 2rem;
 }
 
 .trekking {
-  position: absolute;
-  z-index: -1;
-  margin-top: 15rem;
+  position: relative;
 }
 
 .card-header {
   position: absolute;
-  z-index: 1;
   border-color: #ffffff;
   background-color: #ffffff;
-  border-top: 5rem;
-  margin-top: 5rem;
+  margin-top: 8rem;
+  left: 5rem;
 }
 
 .features {

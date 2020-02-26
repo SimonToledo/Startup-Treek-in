@@ -1,16 +1,10 @@
-header{
-  margin-bottom:10em;
-}
 .trekking{
-  position:absolute;
-  z-index: -1;
-  margin-top: 15rem;
+  position: relative;
 }
 .card-header{
-  position:absolute;
-  z-index: 1;
+  position: absolute;
   border-color: #ffffff;
   background-color: #ffffff;
-  border-top: 5rem;
-  margin-top: 5rem;
+  margin-top: 8rem;
+  left: 5rem;
 }
