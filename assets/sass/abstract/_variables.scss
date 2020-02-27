@@ -1,0 +1,58 @@
+
+@mixin respond-to($breakpoint) {
+$raw-query: map-get($breakpoints, $breakpoint);
+
+@if $raw-query {
+  $query: if(type-of($raw-query)=='string',
+      unquote($raw-query),
+      inspect($raw-query));
+
+  @media #{$query} {
+    @content;
+  }
+}
+
+@else {
+  @error 'No value found for `#{$breakpoint}`. '
+  +'Please make sure it is defined in `$breakpoints` map.';
+}
+}
+
+
+// Unidades absolutas a relativas
+@mixin relative-converter($property, $unit, $target, $context) {
+$result: ($target / $context);
+
+#{$property}: #{$result + $unit};
+}
+
+
+@mixin boton-blue() {
+
+background-color: $ball-blue;
+font-family: $open-sans;
+font-size: $medium;
+color: $white;
+font-weight: $bold;
+
+}
+
+@mixin boton-blue-hover() {
+
+background-color: $middle-blue;
+font-family: $open-sans;
+font-size: $medium;
+color: $white;
+font-weight: $bold;
+
+}
+
+@mixin boton-blue-focus() {
+
+background: $lavender-gray;
+font-family: $open-sans;
+font-size: $medium;
+color: $white;
+font-weight: $bold;
+
+}
